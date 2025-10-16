@@ -1,6 +1,7 @@
-package org.example;
+package org.freshwerehouse.persistance.entity;
 
 public class User {
+
     private int id;
     private String name;
     private String email;
@@ -12,7 +13,6 @@ public class User {
     private String phone;
     private String personalNumber;
     private String categoryInTm;
-
 
     public User(int id, String name, String email, String password, String position, String create_at, String update_at, Boolean isDriver, String phone, String personalNumber, String categoryInTm) {
         this.id = id;
@@ -115,4 +115,5 @@ public class User {
     public void setCategoryInTm(String categoryInTm) {
         this.categoryInTm = categoryInTm;
     }
+
 }

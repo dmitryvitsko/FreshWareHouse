@@ -1,9 +1,12 @@
-package org.example;
+package org.freshwerehouse.view;
 
 import java.util.List;
+import org.freshwerehouse.persistance.entity.User;
 
 public class UserView {
+
     public void displayUsers(List<User> users) {
+
         System.out.println("+-----+----------------------+----------------------+------------------+--------------------------+");
         System.out.println("| ID  | Name                 | Email                | Password         | Position                 |");
         System.out.println("+-----+----------------------+-----------------------------------------+--------------------------+");
@@ -17,7 +20,7 @@ public class UserView {
             System.out.printf("| %s | %s | %s | %s | %s |  \n", id, name, email, pass, position);
         }
 
-
         System.out.println("+-----+----------------------+----------------------+------------------+--------------------------+");
     }
+
 }

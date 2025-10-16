@@ -3,15 +3,36 @@ plugins {
     id 'application'
 }
 
+group = 'com.freshwerehouse'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+application {
+    mainClass = 'com.example.Main'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.postgresql:postgresql:42.7.3'
+
 }
 
-application {
-    mainClass = 'org.example.Main'
-    applicationDefaultJvmArgs = ["-Dfile.encoding=UTF-8"]
+tasks.named('test') {
+    useJUnitPlatform()
 }
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
