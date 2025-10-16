@@ -7,13 +7,13 @@ import org.freshwerehouse.view.UserView;
 
 public class Main {
 
-  public static void main(String[] args) {
-    //System.setOut(new java.io.PrintStream(System.out, true, java.nio.charset.StandardCharsets.UTF_8));
+    public static void main(String[] args) {
+        //System.setOut(new java.io.PrintStream(System.out, true, java.nio.charset.StandardCharsets.UTF_8));
 
-    UserDAO model = new UserDAOImpl();
-    UserView view = new UserView();
-    UserPresenterService presenter = new UserPresenterService(model, view);
+        UserDAO model = new UserDAOImpl();
+        UserView view = new UserView();
+        UserPresenterService presenter = new UserPresenterService(model, view);
 
-    presenter.start();
-  }
+        presenter.start();
+    }
 }

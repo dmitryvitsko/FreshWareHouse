@@ -1,7 +1,8 @@
 package org.freshwerehouse.view;
 
-import java.util.List;
 import org.freshwerehouse.persistance.entity.User;
+
+import java.util.List;
 
 public class UserView {
 
